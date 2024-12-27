@@ -19,7 +19,7 @@ export function renderPaymentSummary() {
 
     const taxCents = totalBeforeTaxCents * 0.1;
 
-    const totalCents = totalBeforeTaxCents + TaxCents;
+    const totalCents = totalBeforeTaxCents + taxCents;
 
     const paymentSummaryHTML =
     `
