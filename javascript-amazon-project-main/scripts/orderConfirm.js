@@ -4,15 +4,15 @@ import { formatCurrency } from "./utils/money.js";
 import dayjs from "https://unpkg.com/dayjs@1.11.10/esm/index.js";
 import { getDeliveryOption } from "../data/deliveryOptions.js";
 
-
 export function OrderConfirm() {
 
     let orderConfirmHTML = '';
     let productPriceCents = 0;
     let shippingPriceCents = 0;
+    let productId = 0;
 
     cart.forEach((cartItem) => {
-      const productId = cartItem.productId;
+      productId = cartItem.productId;
 
         const matchingProduct = getProduct(productId);
         productPriceCents += matchingProduct.priceCents * cartItem.quantity;
@@ -23,20 +23,19 @@ export function OrderConfirm() {
         shippingPriceCents += deliveryOption.priceCents; 
     });
 
+    const Id = productId;
+
     const totalBeforeTaxCents = productPriceCents + shippingPriceCents;
 
     const taxCents = totalBeforeTaxCents * 0.1;
 
     const totalCents = totalBeforeTaxCents + taxCents;
 
-    const orderId = ;
-
     cart.forEach((cartItem) => {
 
-        const productId = cartItem.productId;
+        productId = cartItem.productId;
 
         const matchingProduct = getProduct(productId);
-        productPriceCents += matchingProduct.priceCents * cartItem.quantity;
 
         const deliveryOptionId = cartItem.deliveryOptionId;
 
@@ -65,7 +64,7 @@ export function OrderConfirm() {
 
             <div class="order-header-right-section">
               <div class="order-header-label">Order ID:</div>
-              <div>${matchingProduct.productId}</div>
+              <div>${Id}</div>
             </div>
           </div>
 
