@@ -4,14 +4,6 @@ import { formatCurrency } from "./utils/money.js";
 import dayjs from "https://unpkg.com/dayjs@1.11.10/esm/index.js";
 import { getDeliveryOption } from "../data/deliveryOptions.js";
 
-function generateOrderId() {
-  // Generates a UUID v4 string
-  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-    const r = Math.random() * 16 | 0;
-    const v = c === 'x' ? r : (r & 0x3 | 0x8);
-    return v.toString(16);
-  });
-}
 
 export function OrderConfirm() {
 
@@ -37,7 +29,7 @@ export function OrderConfirm() {
 
     const totalCents = totalBeforeTaxCents + taxCents;
 
-    const orderId = generateOrderId();
+    const orderId = ;
 
     cart.forEach((cartItem) => {
 
@@ -73,7 +65,7 @@ export function OrderConfirm() {
 
             <div class="order-header-right-section">
               <div class="order-header-label">Order ID:</div>
-              <div>${orderId}</div>
+              <div>${matchingProduct.productId}</div>
             </div>
           </div>
 
