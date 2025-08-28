@@ -17,10 +17,9 @@ This project is a front-end **amazon.com clone** that showcases a responsive use
   * **Interactive Elements:** The clone features interactive elements such as a navigation bar and buttons that respond to user clicks, all powered by **JavaScript event listeners**.
     
     <img width="1919" height="834" alt="Screenshot 2025-08-28 162711" src="https://github.com/user-attachments/assets/d14fb289-9fe6-43ba-9a5a-d56cb6965609" />
-    *A dummy cart is created to keep the cart when accessing the project.*
     
   * **Structured Markup:** The project's structure is built with clean and semantic **HTML**, ensuring accessibility and maintainability.
     
     <img width="1914" height="911" alt="Screenshot 2025-08-28 162756" src="https://github.com/user-attachments/assets/cebb5dc9-a22d-4e3a-8854-4a01107d56cc" />
 
-
+## Feel free to Fork and Contribute !!
