@@ -22,4 +22,4 @@ This project is a front-end **amazon.com clone** that showcases a responsive use
     
     <img width="1914" height="911" alt="Screenshot 2025-08-28 162756" src="https://github.com/user-attachments/assets/cebb5dc9-a22d-4e3a-8854-4a01107d56cc" />
 
-## Feel free to Fork and Contribute !!
+## Feel free to fork and contribute !!
